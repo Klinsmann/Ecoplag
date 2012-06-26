@@ -1,0 +1,67 @@
+/********************RESETS*********************/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html, body, h1, h2, h3, h4, ul, li {
+	margin: 0;
+	padding: 0;
+}
+h1 img {
+	display: block;
+}
+img {
+	border: 0;
+}
+a {
+	text-decoration:none
+}
+
+.nf{
+	clear:both;
+}
+
+/****************ESTILOS GENERALES***************/
+
+body{
+	background:rgba(240, 240, 240, 1);
+}
+
+#wrapper{
+	background:url(../temporal/FrontA.jpg) no-repeat;
+	width:1024px;
+	height:768px;
+	margin:0 auto;
+	position:relative;
+	box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+#form1{
+	position: relative;
+	top:360px;
+	right:22px;
+	float:right;
+	margin:0 auto;
+}
+
+header{
+	
+}
+
+nav{
+	
+}
+
+section{
+	
+}
+
+article{
+	
+}
+
+footer{
+	
+}

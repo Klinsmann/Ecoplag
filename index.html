@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+		<head>
+			<title>Ecoplag - Veracruz</title>
+			
+			<meta charset="utf-8">
+			<meta name="author" content="Klinsmann">
+			<meta name="description" content="">
+			<link rel="stylesheet" type="text/css" href="css/estilos.css">
+			<script type="text/javascript" src="js/prefixfree.js"></script>
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+			<script type="text/javascript">
+				function MM_validateForm() { //v4.0
+				  if (document.getElementById){
+				    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+				    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+				      if (val) { nm=val.name; if ((val=val.value)!="") {
+				        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+				          if (p<1 || p==(val.length-1)) errors+='- '+nm+' debe ser una dirección email.\n';
+				        } else if (test!='R') { num = parseFloat(val);
+				          if (isNaN(val)) errors+='- '+nm+' debe ser un valor numérico.\n';
+				          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+				            min=test.substring(8,p); max=test.substring(p+1);
+				            if (num<min || max<num) errors+='- '+nm+' debe contener un número entre '+min+' y '+max+'.\n';
+				      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' es obligatorio.\n'; }
+				    } if (errors) alert('Han ocurrido los siguiente errores:\n'+errors);
+				    document.MM_returnValue = (errors == '');
+				} }
+			</script>
+		</head>
+<body>
+	<div id="wrapper">
+
+		<form action="contacto.php" method="post" name="form1" id="form1" onsubmit="MM_validateForm('nombre','','R','email','','RisEmail');return document.MM_returnValue">
+  <p>Nombre:<br />
+    <label for="nombre"></label>
+  <input type="text" name="nombre" id="nombre" />
+  <br />
+
+  Email:<br />
+  <label for="email"></label>
+  <input type="text" name="email" id="email" />
+  </p>
+  <p>telefono:<br />
+    <label for="telefono"></label>
+    <input type="text" name="telefono" id="telefono" />
+    <br />
+    Comentarios:<br />
+    <label for="comentarios"></label>
+    <textarea name="comentarios" rows="4" id="comentarios"></textarea>
+    <br />
+    <input type="submit" name="button" id="button" value="Enviar datos" />
+    <input type="reset" name="button2" id="button2" value="Borrar" />
+  </p>
+</form>
+		<!--<header>cabecera</header>
+		<nav>navegacion</nav>
+		<aside>contenido tangencial</aside>
+		<section>
+			<article>Primer articulo</article>
+
+		</section>
+		<section>
+			<article>Segundo articulo</article>
+
+		</section>
+		<section>
+			<article>Tercer articulo</article>
+
+		</section>
+		<footer>Pie de pagina</footer>-->
+	</div><!--fin del div WRAPPER-->
+</body>
+</html> 
