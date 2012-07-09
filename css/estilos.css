@@ -29,6 +29,16 @@ body{
 	background:rgba(240, 240, 240, 1);
 }
 
+a{
+	background:gray;
+	border-radius:5px;
+	float:right;
+	padding:5px;
+	color:#fff;
+	margin:16px 0 0 0px;
+	
+}
+
 #wrapper{
 	background:url(../temporal/FrontA.jpg) no-repeat;
 	width:1024px;
